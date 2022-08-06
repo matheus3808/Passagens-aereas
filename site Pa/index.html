@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passagens Aéreas</title> 
+    <link rel="shortcut icon" href="img.html/E.M-icon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!--font awesome link-->
+    <link rel="stylesheet" href="fontawesome/fontawesome/css/all.css">
+    <!--css file link-->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <!--header section starts-->
+
+    <header class="header">
+        <a href="#" class="logo"><i class="fa fa-paper-plane"></i>EDENS<span>MATHEUS</span></a> 
+
+        <nav class="navbar">
+            <a href="#Voos">Voos</a>
+            <a href="#Pacotes">Pacotes</a>
+            <a href="Hotéis.html">Hotéis</a>
+            <a href="#Informações">Informações</a>
+            <a href="contato.html">Contato</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+        
+        <div class="icons">
+            <div class="fas fa-moon" id="theme-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="login-form">
+            <div class="inputBox">
+                <span>E-mail</span>
+                <input type="email" placeholder="Digite seu email">
+            </div>
+
+            <div class="inputBox">
+                <span>Senha</span>
+                <input type="password" placeholder="Digite sua Senha">
+            </div>
+
+            <input type="submit" class="btn" value="Entrar">
+
+            <div class="remember">
+                <input type="checkbox" name="" id="login-remember">
+                <label for="login-remember">continuar conectado</label>
+                <p>esqueceu a senha? <a href="#">clique aqui</a></p>
+                <p>não tem conta? <a href="#">registrar agora</a></p>
+            </div>
+            
+        </form>
+    </header>   <!--header section ends-->
+
+
+    <!-- home section starts -->
+
+    <section class="home"> 
+
+        <div class="image" data-aos="fade-down">
+            <img src="img.html/travel with family.webp" alt="">
+        </div>
+
+        <div class="content" data-aos="fade-up"> 
+            <h2>O plano de viagem em família...<br>
+                significa muito planejamento
+            </h2>
+               <p> Você ainda pode ter férias únicas na vida com seu clã,
+                mas é muito trabalho. Aqui está como fazê-lo direito.
+                Agora que você pensou nisso, você não acha que precisa 
+                de uma pausa e passar um tempo com sua família?</p>
+                
+            <a href="#" class="btn">Procurar Agora</a>
+        </div>
+    </section>  <!-- home section ends -->
+
+   <!-- filter form section starts -->
+
+   <section class="form-container" id="Voos" data-aos="zoom-in">  <!--caixa de formulário da reserva-->
+       <form action=""> 
+           <div class="form-titulo">
+               <h1>Passagens Aéreas</h1> <br>
+               <p>Encontre os melhores valores e boa viagem!</p>
+           </div>
+ 
+           <div class="radio-btn">
+               <input type="radio" class="btn" name="check" checked="checked"><span>Ida e Volta</span>
+               <input type="radio" class="btn" name="check" ><span>Somente Ida</span>
+               <input type="radio" class="btn" name="check" ><span>Vários Destinos</span>
+           </div>
+
+           <div class="inputBox1">
+               <label>Origem <i class="fas fa-map-marker-alt"></i> <input type="text" class="loca" placeholder="Isira a Cidade ou Aeroporto de Origem"> </label>
+               <label>Destino <i class="fas fa-map-marker-alt"></i> <input type="text" class="loca" placeholder="Isira a Cidade ou Aeroporto de Destino"> </label>
+           </div> 
+            
+           <div class="inputBox2">
+               <label>Data de Ida <input type="date"> </label>
+               <label>Data de Volta <input type="date"> </label>
+           </div>
+
+           <!--passageiros e classe-->
+           <div class="inputBox3">
+               <label>Adultos <input type="number" class="form-control" value="1" min="1" max="10"> </label>
+               <label>Crianças 2 a 11 anos <input type="number" class="form-control" value="0" min="0" max="10"> </label>
+           </div>
+
+           <div class="inputBox"> 
+              <select name="custom-select">
+                 <option value="1">Qualquer Classe</option>
+                 <option value="2">Econômica</option>
+                 <option value="3">Econômica Premium</option>
+                 <option value="4">Executiva</option>
+                 <option value="5">1&#170 Classe</option>
+               </select>
+           </div>
+              <br>
+           <div class="radio-btn">
+                <input id="btn-footer" type="radio" class="btn" name="check"> <span>Não defini as Datas</span>
+           </div>
+
+           <button type="submit" class="btn"> <i class="fas fa-search"></i> Buscar</button>
+
+        </form>
+
+    </section> <!-- filter form section ends -->
+
+
+   <!--Pacotes section starts-->
+
+    <section class="pacotes" id="Pacotes">
+
+        <h1 class="heading">nossos <span>pacotes nacionais</span> </h1>
+        <p>Se você ainda não definiu o seu destino, talvez te interesse ver a nossa seção de ofertas.
+        Top destinos mais buscados hoje no Brasil.</p> 
+        <br>
+        <div class="box-container">
+
+            <div class="box" data-aos="zoom-in">
+                <div class="image">
+                    <img src="img.html/bahia.jpg" alt="">
+                    <h3><i class="fas fa-map-marker-alt"></i>bahia</h3> 
+                </div>
+                <div class="content">
+                    <div class="preço">são paulo para salvador, aéreo (ida e volta)+ 3dias ,apartir de <span>R$ 761</span></div>
+                    <a href="#" class="btn">comprar agora</a>
+                </div>
+            </div>
+
+           <div class="box" data-aos="fade-up">
+               <div class="image">
+                   <img src="img.html/rio grande do norte-natal.jpg" alt="">
+                   <h3><i class="fas fa-map-marker-alt"></i>rio grande de norte</h3>
+               </div>
+               <div class="content">
+                   <div class="preço"> são paulo para natal, aéreo (ida e volta)+ 3dias ,apartir de <span>R$ 750</span></div>
+                   <a href="#" class="btn">comprar agora</a>
+               </div> 
+           </div>
+              
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img.html/rio de Janeiro.jpg" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>rio de Janeiro</h3>
+                </div>
+                <div class="content">
+                    <div class="preço"> são paulo para rio de Janeiro, aéreo (ida e volta)+ 3dias, apartir de <span>R$ 398</span></div>
+                    <a href="#" class="btn">comprar agora</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img.html/são Paulo.jpg" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>são paulo</h3>
+                </div>
+                <div class="content">
+                    <div class="preço">são josé do rio preto para são paulo , aéreo (ida e volta)+ 5dias, apartir de <span>R$ 345</span></div>
+                    <a href="#" class="btn">comprar agora</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img.html/santos-sp.jpg" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>são paulo</h3>
+                </div>
+                <div class="content">
+                    <div class="preço"> são paulo para santos, aéreo (ida e volta)+ 5dias, apartir de <span>R$ 537</span></div>
+                    <a href="#" class="btn">comprar agora</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img.html/goiania.jpg" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>goiás</h3>
+                </div>
+                <div class="content">
+                    <div class="preço"> são paulo para Goiânia, aéreo (ida e volta)+ 3dias, apartir de <span>R$ 315</span></div>
+                    <a href="#" class="btn">comprar agora</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img.html/porto alegre.jpg" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>rio grande do sul</h3> 
+                </div>
+                <div class="content">
+                    <div class="preço"> são paulo para porto alegre, aéreo (ida e volta)+ 3dias, apartir de <span>R$ 333</span></div>
+                    <a href="#" class="btn">comprar agora</a>
+                </div>
+            </div>
+
+           <div class="box" data-aos="fade-up">
+               <div class="image">
+                   <img src="img.html/brazil-belo-horizonte-belohorizonte-minasgerais.jpg" alt="">
+                   <h3> <i class="fas fa-map-marker-alt"></i>minas Gerais</h3>
+               </div>
+               <div class="content">
+                   <div class="preço"> são paulo para belorizonte, aéreo (ida e volta)+ 4dias, apartir de <span>R$ 252</span></div>
+                   <a href="#" class="btn">comprar agora</a>
+               </div>
+           </div>
+
+           <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img.html/passagens-aereas-gramado-capa2019-04.jpg" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>Rio Grande do Sul</h3>
+                </div>
+                <div class="content">
+                    <div class="preço"> são paulo para Gramado, aéreo (ida e volta)+ 6dias, apartir de <span>R$ 1.821</span></div>
+                    <a href="#" class="btn">comprar agora</a>
+                </div>
+            </div>
+
+        </div>
+
+        <h1 class="heading">nossos <span>pacotes Iternacionais</span></h1>
+        <p>Explore o mundo com E.M passagens aéreas! Em nosso site, você encontra passagens aéreas internacionais com descontos imperdíveis. 
+            Prepare-se para percorrer o mundo, gastando muito menos.
+        </p> 
+        <br>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img.html/paris.jpg" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>frança</h3>
+                </div>
+                <div class="content">
+                    <div class="preço"> são paulo para paris, aéreo (ida e volta),apartir de <span>R$ 6.265</span></div>
+                    <a href="#" class="btn">comprar agora</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img.html/new-york-4k-sunset-cityscapes-manhattan.jpg" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>estados unidos</h3>
+                </div>
+                <div class="content">
+                    <div class="preço"> são paulo para nova york, aéreo (ida e volta),apartir de <span>R$ 3.296</span></div>
+                    
+                    <a href="#" class="btn">comprar agora</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img.html/shanghai-china-taken-during-daytime.jpg" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>china</h3>
+                </div>
+                <div class="content">
+                    <div class="preço"> são paulo para shangai, aéreo (ida e volta),apartir de <span>R$ 9.220</span></div>
+                    <a href="#" class="btn">comprar agora</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="zoom-in">
+                <div class="image">
+                    <img src="img.html/tokyo-4k-shinjuku-street-modern-buildings.jpg" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>japão</h3>
+                </div>
+                <div class="content">
+                    <div class="preço"> são paulo para tóquio, aéreo (ida e volta),apartir de <span>R$ 8.050</span></div>
+                    <a href="#" class="btn">comprar agora</a>
+                </div>
+            </div>
+
+            
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img.html/thumb2-lisbon-portugal-4k-capital-taho.jpg" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>portugal</h3>
+                </div>
+                <div class="content">
+                    <div class="preço"> são paulo para lisboa, aéreo (ida e volta),apartir de <span>R$ 2.470</span></div>
+                    <a href="#" class="btn">comprar agora</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img.html/obelisco-de-buenos-aires-argentina-buenos-aires-city-wallpaper-preview.jpg" alt="">
+                    <h3> <i class="fas fa-map-marker-alt"></i>argentina</h3>
+                </div>
+                <div class="content">
+                    <div class="preço"> são paulo para buenos Aires, aéreo (ida e volta),apartir de <span>R$ 1.155</span></div>
+                    <a href="#" class="btn">comprar agora</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>  <!--Pacotes section ends-->
+     
+   <!--informaçoes section starts-->
+   <section class="info" id="Informações">
+        <h1 class="heading">Escolha <span>E.M para as suas viagens</span></h1>
+    
+        <p>
+            Nosso objetivo é ajudar você a realizar seu sonho de conhecer o mundo. Garanta seu embarque e reserve sua passagem aérea.
+        </p>
+        <p>
+            Revolucionamos o jeito de comprar passagens aéreas. Economizando até 50% dos valores propostos pelas companhias de viagem, você pode adquirir seu bilhete de 
+            embarque de forma rápida, prática e segura.
+        </p>
+        <p>
+            A tecnologia é nossa grande aliada. Fazemos uma varredura nos sites das companhias aéreas, de acordo com a data e destino de sua preferência para embarque e desembarque.
+            A nossa transparência e ética faz com que caso a passagem mais barata não esteja em nosso site, você seja direcionado para a companhia aérea que apresenta a melhor oportunidade.
+            Saiba mais como funciona nosso trabalho.
+        </p>
+
+        <div class="box-container" data-aos="fade-down">
+
+            <div class="box">
+                <span>01</span>
+                <i class="fas fa-plane"></i>
+                <h3>Passagens rápidas</h3>
+                <p>
+                    Se você deixou para última hora para comprar sua passagem aérea, não se preocupe, pois, emitimos passagens aéreas em um prazo de até 24 horas. 
+                    Portanto, é possível comprar com antecedência mínima de dois dias para a data do voo.
+                </p>
+            </div>
+    
+            <div class="box">
+                <span>02</span>
+                <i class="fas fa-user-lock"></i>
+                <h3>Seguro</h3>
+                <p>
+                    Nosso site é equipado com recursos tecnológicos que protegem seus dados, evitando qualquer tipo de fraude na emissão da sua passagem aérea.
+                    Uma vez que seu pedido seja confirmado por e-mail, garantimos o seu embarque.
+                </p>
+            </div>
+    
+            <div class="box">
+                <span>03</span>
+                <i class="fas fa-user">?</i>
+                <h3>Dúvidas</h3>
+                <p>
+                    Para esclarecer qualquer dúvida, estamos disponíveis por aplicativo de mensagem, e-mail e telefone. Aproveite ainda para conferir nossa
+                    FAQ e obtenha resposta para as perguntas mais comuns.
+                </p>
+                <a href="contato.html" class="btn">Saiba mais</a>
+            </div>
+
+        </div>
+
+    </section> <!--informaçoes section ends-->
+
+    <!--rodapé section starts-->
+    <footer class="rodape">
+        
+        <div class="box-container">
+
+            <div class="box">
+                <h3>EM Passagens aereas</h3>
+                <a href="#sobre nos"><i class="fas fa-chevron-right"></i> sobre nos</a>
+                <a href="#blog"><i class="fas fa-chevron-right"></i> blog</a>
+                <a href="#imprensa"><i class="fas fa-chevron-right"></i> imprensa</a>
+                <a href="#trabalhe conosco"><i class="fas fa-chevron-right"></i> trabalhe conosco</a> 
+                <a href="#termos e condicoes"><i class="fas fa-chevron-right"></i> termos e condições</a>
+                <a href="#politica de privacidade"><i class="fas fa-chevron-right"></i> politica e privacidade</a>
+            </div>
+    
+            <div class="box">
+                <h3>Atendimento 24 horas</h3>
+                <a href="#duvidas frequentes"><i class="fas fa-chevron-right"></i> duvidas frequentes</a>
+                <a href="#remarcacoes/cancelamento"><i class="fas fa-chevron-right"></i> remarcações/cancelamento</a>
+                <a href="contato.html"><i class="fas fa-chevron-right"></i> fale conosco</a>
+
+                <div class="box">
+                    <h3>Formas de pagamento</h33>
+                    <img  width="200px" height="25px" src="img.html/pngwing.com (17).png" alt="pagamento">
+                </div>
+            </div>
+   
+            <div class="box">
+                <h3>contato-info</h3>
+                <a href=""><i class="fas fa-phone"></i> 11 98706-5561</a>
+                <a href=""><i class="fab fa-whatsapp"></i> 19 98216-7750</a>
+                <a href=""><i class="fas fa-envelope"></i> jeanedensdezil@gmail.com</a>
+                <a href=""><i class="fas fa-envelope"></i> matheus36925@hotmail.com</a>
+                <a href=""><i class="fas fa-map-marker"></i> são Paulo, Brasil</a>
+            </div>
+
+            <div class="box">
+                <h3>Redes Sociais</h3>
+                <a href=""><i class="fa-brands fa-facebook"></i> facebook</a>
+                <a href=""><i class="fa-brands fa-twitter"></i> twitter</a>
+                <a href=""><i class="fa-brands fa-github"></i> github</a>
+                <a href=""><i class="fa-brands fa-instagram"></i> instagram</a>
+                <a href=""><i class="fa-brands fa-youtube"></i> youtube</a>
+                <a href=""><i class="fa-brands fa-tiktok"></i> tiktok</a>
+                <a href=""><i class="fa-brands fa-linkedin"></i> linkedin</a>
+            </div>
+
+        </div>
+
+        <div class="credito">
+            <p><i class="far fa-copyright"></i> Criado por <span>Jean edens dezil</span> e <span>Matheus Feltrin Lamen Rocha</span> todos os direitos reservados</p>
+        </div>
+        
+    </footer>  <!--rodapé section ends-->
+
+    <!--custom js fil link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/script.js"></script>   
+
+    <script>
+        AOS.init({
+            duration:800,
+            deplay:400
+        });
+    </script>
+</body>
+</html>

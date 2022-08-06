@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato</title> 
+    <link rel="shortcut icon" href="img.html/E.M-icon.png" type="image/x-icon">
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="fontawesome/fontawesome/css/all.css">
+    <!--custom css file cdn link-->
+    <link rel="stylesheet" href="contato.css">
+    <!--<link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+   <div class="container">
+       <div class="contato-box">
+           <div class="esquerda"> 
+               <div class="icons">
+                   <p>siga-nos!</p>
+                   <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                   <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                   <a href="#"><i class="fa-brands fa-github"></i></a>
+                   <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                   <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                   <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                   <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+               
+            </div>
+               <div class="direita">
+                   <a href="index.html" class="logo"> <i class="fa fa-paper-plane"></i>EDENS<span>MATHEUS</span></a> 
+                   <h5>Contate-nos</h5> 
+
+                   <form class="form" action="https://formsubmit.co/deziljeanedens@yahoo.com" method="post">
+                       <label for="name">Nome</label> <!--pode usar tag label ou span-->
+                       <input type="text" class="field" name="name" placeholder="......" required/>
+                       <label for="email">E-mail</label>
+                       <input type="text" class="field"  name="email" placeholder="......" required/>
+                      <!-- <label for="phone">Telefone</label>
+                       <input type="text" class="field"  name="phone" required/>-->
+                       <label for="message">Mensagem</label>
+                       <textarea  class="field area" name="message" placeholder="Escreva Aqui" required></textarea>
+                       <input type="hidden" name="_captcha" value="false"/>
+                       <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html"/>
+
+                       <button type="submit" class="btn">Enviar</button>
+                   </form>
+               </div>
+       </div>
+   </div>
+</body>
+</html>

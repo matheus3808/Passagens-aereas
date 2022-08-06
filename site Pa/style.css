@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;600;700&display=swap');
+
+:root{
+    --orange:#f79f1f;
+    --text-color-1:#444;
+    --text-color-2:#666;
+    --tex-color-3:black;
+    --bg-color-1:#fff;
+    --bg-color-2:#eee;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-align: justify;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    flex-wrap: wrap;
+}
+
+html{
+    font-size: 68.5%;        /*era 62.5% da reducão do font*/
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 2rem; /*era 8rem*/
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+htmlhtml::-webkit-scrollbar-thumb{
+    background: var(--orange);
+}
+body{
+    background: var(--bg-color-2);
+}
+
+body.active{                   /*para activa o modo esculo e modo claro*/
+    --text-color-1:#fff;
+    --text-color-2:#eee;
+    --tex-color-3: #eee;
+    --bg-color-1:#333;
+    --bg-color-2:#222;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.4);
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: var(--bg-color-1);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem 7%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: blue;
+}
+
+.header .logo span{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: var(--orange);
+    text-transform: uppercase;
+}
+
+.header .logo i{
+    color: var(--orange);
+}
+
+.header .icons div{
+   font-size: 2.6rem;
+   color: var(--text-color-1);
+   cursor: pointer;
+   margin-right: 2rem;
+}
+
+.header .icons div:hover{
+    color: orange;
+}
+
+/*o botão menu*/
+
+#menu-btn{
+    border: .1rem solid orange;
+    border-radius: .5rem;
+    font-size: 2.6rem;
+    padding: 1.1rem 1.1rem;
+    display: none;
+}
+
+.header .navbar a{
+    margin: 0 .8rem;
+    font-size: 2rem;
+    color: var(--text-color-1);
+}
+
+.header .navbar a:hover{
+    color: var(--orange);
+}
+
+/*caixa do e-mail*/
+
+.header .login-form{
+    position: absolute;
+    top: 115%; right: 7%;
+    background: var(--bg-color-1);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 35rem;
+    padding: 2rem;
+    transform: scale(0);
+    transform-origin: top right;
+}
+
+.header .login-form.active{
+    transform: scale(1);
+}
+
+.header .login-form .inputBox{
+    margin-bottom: 1rem;
+}
+
+.header .login-form .inputBox span{
+    font-size: 1.7rem;
+    color: var(--text-color-2);
+}
+
+.header .login-form .inputBox input{
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: .5rem;
+    padding: 1rem;
+    background: var(--text-color-2);
+    width: 100%;
+    text-transform: none;
+    margin: .5rem 0;
+}
+
+.header .login-form .remember{
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+   padding: .5rem 0;
+   padding-top: 2rem;
+}
+
+.header .login-form .remember label{
+    color: var(--text-color-1);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.header .login-form .remember p{
+    padding: 0.1rem 0;
+    font-size: 1.4rem;
+    color: var(--text-color-1);
+}
+
+.header .login-form .remember p a{
+    color: blue;
+}
+.header .login-form .remember p a:hover{
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.header .login-form .btn{
+    width: 100%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .4rem 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--orange);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 8rem;
+}
+
+.home .image{
+    flex: 1 1 50rem;
+}
+
+.home .image img{
+    width: 100%; 
+    margin-top: 5px;
+}
+.home .content{
+    flex: 1 1 45rem;
+}
+
+.home .content h2{
+    color: var(--text-color-1);
+    font-size: 4 rem;
+}
+
+.home .content p{
+    color: var(--text-color-2);
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    padding: 1rem 0;
+}
+
+.form-container form{
+    background: var(--bg-color-1);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2rem;
+    /*display: flex;
+    flex-wrap: flex;*/
+    position: relative;
+    display: block;
+    gap: 1rem;
+    align-items: center;
+    height: 100%;
+}
+
+h1{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.8rem;
+    color: var(--tex-color-3);
+    margin-bottom: 2rem;
+}
+
+.radio-btn .btn::after{
+    content: '';
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    visibility: visible;
+    border-radius: 50%;
+}
+.radio-btn span{
+    color: var(--tex-color-3);
+    margin-right: 25px;
+    font-size:1.4rem;
+    display: inline;
+}
+
+input{
+    display: block;
+}
+label{
+    margin-top: 2rem;
+}
+
+.form-container form .inputBox1{
+    position: relative;
+    display: inline-flex;
+    flex: 1 1 23rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-container form .inputBox1 .loca{
+   width: 45rem;
+   margin-right: 3px;
+   border-right: black 2px;
+}
+.form-container form .inputBox1 label{
+    font-size: 1.7rem;
+    color:black;
+}
+.form-container form .inputBox1 input{
+    font-size: 1.5rem;
+    color: var(--text-color-1);
+    background: var(--bg-color-2);
+    border-radius: .5rem;
+    margin: .5rem 0;
+    text-transform: none;
+    padding: 1rem;
+}
+
+.form-container form .inputBox2{
+    position: relative;
+    display: inline-flex;
+    flex: 1 1 23rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-container form .inputBox2 label{
+    font-size: 1.7rem;
+    color: black;
+}
+.form-container form .inputBox2 input{
+    font-size: 1.5rem;
+    color: var(--text-color-1);
+    background: var(--bg-color-2);
+    border-radius: .5rem;
+    margin: .5rem 0;
+    text-transform: none;
+    padding: 1rem;
+    width: 100%;
+}
+label i{
+    color: var(--orange);
+}
+
+
+.form-container form .inputBox3{
+    position: relative;
+    display: inline-flex;
+    flex: 1 1 23rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-container form .inputBox3 label{
+    font-size: 1.7rem;
+    color: black;
+    margin-left: 1.1rem;
+}
+.form-container form .inputBox3 input{
+    font-size: 1.5rem;
+    color: var(--text-color-1);
+    background: var(--bg-color-2);
+    border-radius: .5rem;
+    margin: .5rem 0;
+    text-transform: none;
+    width: 10rem;
+    padding: 1.1rem;
+}
+
+
+.form-container form .inputBox{
+    position: relative;
+    display: inline-flex;
+    flex: 1 1 23rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-container form .inputBox select{
+    font-size: 1.5rem;
+    color: var(--text-color-1);
+    background: var(--bg-color-2);
+    border-radius: .5rem;
+    margin: .5rem 0;
+    text-transform: none;
+    width: 18rem;
+    padding: 1.4rem;
+}
+.form-container form .btn{
+    flex: 1 1 5rem;
+}
+
+
+/*Pacotes section starts*/
+
+.heading{
+    text-align: center;
+    padding-bottom: 1rem;
+    color: var(--text-color-1);
+    font-size: 4rem;
+}
+
+.heading span{
+    position: relative;
+    z-index: 0;
+}
+
+.heading span::before{
+    content: '';
+    position: absolute;
+    bottom: 1rem; left: 0;
+    z-index: -1;
+    background: var(--orange);
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 90%, 100% 83%, 100% 100%, 0% 100%);
+}
+
+.pacotes .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.pacotes .box-container .box{
+    background: var(--bg-color-1);
+    border-radius: none;
+    box-shadow: var(--box-shadow);
+}
+
+.pacotes .box-container .box .image{
+    height: 18rem;
+    width: 100%;
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+
+.pacotes .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: none;
+}
+
+.pacotes .box-container .box.image h3{
+    position: absolute;
+    top: 2.5rem; left: 2.5rem;
+    font-size: 2rem;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    border-radius: .5rem;
+    font-weight: lighter;
+    padding: .5rem 1.5rem;
+}
+
+.pacotes .box-container .box .image h3 i{
+    color: var(--orange);
+}
+
+.pacotes .box-container .box .content{
+    padding: 1.5rem;
+    padding-top: 0;
+}
+
+.pacotes .box-container .box .content .preço{
+    font-weight: 600;
+    color: var(--text-color-1);
+    font-size: 1.5rem;
+}
+
+.pacotes .box-container .box .content .preço span{
+    /*font-weight: lighter;*/
+    color: var(--orange);
+    font-size: 1.5rem;
+    /*text-decoration: line-through;*/
+}
+
+.pacotes .box-container .box .content p{
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    color: var(--text-color-2);
+    line-height: 11.7rem;
+}
+
+/*informaçoes section starts*/
+
+.info p{
+    font-size: 1.5rem;
+    color: var(--text-color-2);
+    font-weight: lighter;
+}
+
+
+.info .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.info .box-container .box{
+    background: var(--bg-color-1);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    padding: 2rem;
+}
+
+.info .box-container .box span{
+    position: absolute;
+    top: .5rem; right: 2rem;
+    color: var(--text-color-2);
+    font-weight: bolder;
+    font-size: 5rem;
+}
+
+.info .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    background: var(--orange);
+    border-radius: 50%;
+    margin-bottom: .5rem;
+}
+
+.info .box-container .box h3{
+    color: var(--text-color-1);
+    font-size: 2rem;
+    padding: .7rem 0;
+}
+
+.info .box-container .box p{
+    color: var(--tex-color-3);
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+
+/*rodape starts*/
+
+.rodape{
+  background:var(--bg-color-1) ;
+  padding-left: 8rem;
+}
+
+.rodape .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+
+.rodape .box-container .box h3{
+    font-size: 2rem;
+    color: var(--text-color-1);
+    padding: 1rem 0;
+}
+
+.rodape .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--text-color-2);
+    padding: 1rem 0 ;
+}
+
+.rodape .box-container .box a i{
+    padding-right: .5rem;
+    color: var(--orange);
+}
+
+.rodape .box-container .box a:hover i{
+    padding-right: 1.3rem;
+}
+
+.rodape .credito p{
+    font-size: 2rem;
+    text-align: center;
+    border-top: .1rem solid var(--text-color-2);
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    color: var(--text-color-2);
+}
+
+.rodape .credito span{
+    color: var(--orange);
+}
+
+
+/*media queries = consultas de mídia*/
+
+@media(max-width:1200px){  
+   html{
+      font-size: 55%;        
+   }
+}
+
+@media (max-width:991px){
+    .header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){ 
+    #menu-btn{
+        display: initial;
+    }    
+    
+    .header .navbar{
+        position: absolute;
+        top: 100%; right: 0; left: 0;
+        background: var(--bg-color-1);
+        border-top: .1rem solid orange;
+        padding: 1rem 2rem;
+        transform: scale(0);
+        transform-origin: top right;
+    }
+
+    .header .navbar a{
+        border-radius: .5rem;
+        display: block;
+        margin: 1.5rem 0;
+        padding: 1.5rem;
+        background: var(--bg-color-2);
+    }
+    
+    .header .navbar.active{
+        transform:scale(1);
+    }
+}
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }  
+}

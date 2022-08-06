@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{  /*inportante*/
+    font-size: 70.5%; 
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+    flex-wrap: wrap; /*importante*/
+}
+
+.container:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(img.html/san-francisco-ferry-building-downtown-cbd.webp) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(50%);
+}
+
+.contato-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.esquerda{
+    height: 100%;
+    background: url(img.html/san-francisco-ferry-building-downtown-cbd.webp) no-repeat center;
+    background-size: cover;
+}
+
+.icons{
+    padding-top: 5%;
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+}
+
+.icons a{
+    width: 100%;
+    padding: 1.5rem 0.5rem;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    background-color:transparent;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    transition: .3s;
+}
+
+.icons a:hover{
+    color: orange;
+}
+
+.direita{
+    padding: 25px 40px;
+}
+
+.direita .logo{
+    font-weight: bolder;
+    font-size: 2.2rem;
+    color: blue;
+}
+
+.direita .logo span{
+    font-weight: bolder;
+    font-size: 2.2rem;
+    color: orange;
+    text-transform: uppercase;
+}
+
+.direita .logo i{
+    color: orange;
+}
+
+h5{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h5::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 5px;
+    width: 85px;
+    border-radius: 2px;
+    background-color: orange;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form label{
+    margin-right: 82%;
+}
+
+label{
+    margin-bottom: 0.5rem;
+}
+
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230,230,0.6);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.field:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus{
+    background-color: #fff;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+.area{
+    min-height: 150px;
+}
+
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    background-color: orange;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: blue;
+}
+
+@media screen and (max-width:880px){
+    .contato-box{
+        grid-template-columns: 1fr;
+    }
+    .esquerda{
+        height: 200px;
+    }
+    .icons a{
+        width: 100%;
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        color: #fff;
+        transition: .3s;
+    }
+    .icons a:hover{
+        color: orange;
+    }
+}
