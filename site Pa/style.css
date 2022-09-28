@@ -30,20 +30,13 @@ html{
     scroll-padding-top: 6rem;
     scroll-behavior: smooth;
 }
-html::-webkit-scrollbar{
-    width: 2rem; /*era 8rem*/
-}
-html::-webkit-scrollbar-track{
-    background: transparent;
-}
-htmlhtml::-webkit-scrollbar-thumb{
-    background: var(--orange);
-}
+
+
 body{
     background: var(--bg-color-2);
 }
 
-body.active{                   /*para activa o modo esculo e modo claro*/
+body.active{                   /*para activa o modo escuro e modo claro*/
     --text-color-1:#fff;
     --text-color-2:#eee;
     --tex-color-3: #eee;
